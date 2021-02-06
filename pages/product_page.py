@@ -8,7 +8,7 @@ class ProductPage(BasePage):
         basket_button.click()
 
     def should_be_right_name_and_price(self):
-        self.solve_quiz_and_get_code()
+        #self.solve_quiz_and_get_code()
         assert self.browser.find_elements(*ProductPageLocators.SUCCESS_NAME)[0].text == \
                self.browser.find_element(*ProductPageLocators.BOOK_NAME).text, \
             'После добавления в корзину не совпадают именна '
