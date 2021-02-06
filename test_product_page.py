@@ -55,7 +55,6 @@ def test_message_disappeared_after_adding_product_to_basket(browser):
 
 @pytest.mark.need_review
 def test_guest_can_add_product_to_basket(browser):
-    link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
     link = 'http://selenium1py.pythonanywhere.com/en-gb/catalogue/coders-at-work_207/'
     page = ProductPage(browser, link)
     page.open()
